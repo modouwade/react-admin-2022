@@ -1,0 +1,77 @@
+.navbar{
+   height: 50px;
+   display: flex;
+   border-bottom: 0.5px solid rgb(230, 228, 228);
+   align-items: center;
+   font-size: 14px;
+   color: #555;
+
+   .wrapper{
+       width: 100%;
+       padding: 20px;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       .search{
+           display: flex;
+           align-items: center;
+           border: 0.5px solid lightgray;
+           border-radius: 0 2px 2px 0;
+           padding: 3px 0 3px 3px;
+           height: 20px;
+           input{
+               border: none;
+               outline: none;
+               background-color: transparent;
+               &::placeholder{
+                   font-size: 12px;
+               }
+           }
+           .iconsearch{
+            border-left: 0.5px solid lightgray;
+            display: flex;
+            align-items: center;
+            height: 20px;
+            padding: 3px;
+            cursor: pointer;
+            &:hover{
+                background-color: lightgray
+            }
+           }
+       }
+       .items{
+           display: flex;
+           align-items: center;
+           .item{
+               display: flex;
+               align-items: center;
+               margin-right: 20px;
+               position: relative;
+               .icon{
+                   font-size: 20px;
+               }
+               .avatar{
+                   width: 30px;
+                   height: 30px;
+                   border-radius: 50%;
+               }
+               .counter{
+                   width: 15px;
+                   height: 15px;
+                   border-radius: 50%;
+                   display: flex;
+                   align-items: center;
+                   justify-content: center;
+                   color: white;
+                   font-weight: bold;
+                   font-size: 10px;
+                   background-color: red;
+                   position: absolute;
+                   top: -5px;
+                   right: -5px;
+               }
+           }
+       }
+   }
+
+}
